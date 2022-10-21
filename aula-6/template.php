@@ -7,7 +7,7 @@
             <h2>Gerenciador de Tarefas</h2>
         </div>
         <div class="centralizado">
-            <form>
+            <form method="POST" action="tarefas_action.php">
                 <fieldset>
                     <legend>Nova Tarefa</legend>
                     <label>

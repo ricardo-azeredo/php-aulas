@@ -45,7 +45,12 @@
                     <td><?=$usuario['email']; ?></td>
                     <td>
                         <a href="editar.php?id=<?=$usuario['id']; ?>">editar</a>
-                        <a href="excluir.php?id=<?=$usuario['id']; ?>">excluir</a>
+                        <a
+                         href="excluir.php?id=<?=$usuario['id']; ?>"
+                         onclick="return confirm('Tem certeza que deseja excluir?')"
+                        >
+                        excluir
+                    </a>
                     </td>
                 </tr>
             <?php endforeach; ?>

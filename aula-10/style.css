@@ -4,7 +4,17 @@
     box-sizing: border-box;
 }
 
-body{
-    height: 100%;
+html, body {
+    height: 100% !important;
 }
 
+.login {
+    flex-grow: 1 !important;
+    
+}
+.login form {
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 1.25rem;
+
+}

@@ -3,8 +3,8 @@
 
 ?>
 
-<div class="">
-    <div class="container d-flex align-items-center justify-content-center">
+
+    <div class="container d-flex align-items-center justify-content-center login">
         
             <form action="" method="post">
                 <h2>Registrar</h2>
@@ -36,6 +36,6 @@
                 <input type="submit" name="sendButton" class="btn btn-primary" />
             </form>        
     </div>
-</div>
+
 
 <?php include 'footer.php'; ?>

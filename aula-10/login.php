@@ -8,8 +8,8 @@
     
 
 ?>
-<div class="">
-    <div class="container d-flex align-items-center justify-content-center">
+
+    <div class="container d-flex align-items-center justify-content-center login">
         
             <form action="" method="post">
                 <h2>Login</h2>
@@ -30,6 +30,6 @@
             </form>
         
     </div>
-</div>
+
 
 <?php include 'footer.php'; ?>

@@ -3,7 +3,7 @@
 $dbname = "cad_alunos_db";
 $dbhost = 'localhost';
 $dbuser = 'root';
-$dbpass = '';
+$dbpass = 'root';
 
 
 

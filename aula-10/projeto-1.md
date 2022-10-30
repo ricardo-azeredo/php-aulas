@@ -18,7 +18,11 @@ Em relação ao Banco de dados, vc deverá copiar as instruções sql e colocar 
 - create database [nome da base de dados];
 - create table [nome da tabela] ( atributos );
 
+** Usuários: nome, email e senha;
+** Alunos: nome, email, idade, contato e endereço;
+
 O exercício terá que se colocado no github, num reporsitório público e compartilhado do o perfil github.com/ricardoazeredo.
- 
+
+Explique cada parte do código faz usando os comentários.
 
 </p>

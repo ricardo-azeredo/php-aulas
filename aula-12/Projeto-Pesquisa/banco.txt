@@ -1,0 +1,23 @@
+create database pesquisa_db;
+
+use pesquisa_db;
+
+create table tbl_profissional (
+	id int not null AUTO_INCREMENT primary key,
+    nome varchar(100) not null,
+    sobrenome varchar(100) not null,
+    idade int,
+    cargo varchar(100)
+);
+
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Ricardo','Azeredo',41,'Professor');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Carlos','Silva',65,'Gerente');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Fulano','De Tal',21,'Estagiário');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Ana','Oliveira',38,'Professora');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Maria','Viera',61,'Professora');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Márcio','Pereira',49,'Professor');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Thiago','Santos',45,'Professor');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Fernanda','Azeredo',31,'Gerente');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Sergio','Martins',43,'Professor');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Matheus','Azeredo',18,'Estagiário');
+insert into tbl_profissional (nome,sobrenome,idade, cargo) values ('Marcia','Santos',51,'Professor');

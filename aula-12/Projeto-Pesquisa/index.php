@@ -1,8 +1,12 @@
 <?php
     include 'config.php';
 
-    $pesquisa = filter_input(INPUT_GET, 'pesquisa');
-    $lista = $pdo->query("SELECT * FROM tbl_profissional Where cargo LIKE '%$pesquisa%'");
+    $nome = filter_input(INPUT_GET, 'nome');
+    $sobrenome = filter_input(INPUT_GET, 'sobrenome');
+    $idade = filter_input(INPUT_GET, 'idade');
+    $cargo = filter_input(INPUT_GET, 'cargo');
+
+    $lista = $pdo->query("SELECT * FROM tbl_profissional Where nome like '%$nome%' and sobrenome like '%$sobrenome%' and idade like '%$idade%' and cargo LIKE '%$cargo%'");
 ?>
 
 <!DOCTYPE html>
@@ -16,13 +20,19 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container mt-3">
         <form action="" method="get">
             <label for="">
                 Pesquisar:
-                <input type="search" name="pesquisa" placeholder="buscar...">
-                <input type="submit" value="Buscar">
-            </label>
+            </label>   
+            <div class="d-flex">
+                <input class="form-control" type="search" name="nome" placeholder="buscar nome...">
+                <input class="form-control" type="search" name="sobrenome" placeholder="buscar sobrenome...">
+                <input class="form-control" type="search" name="idade" placeholder="buscar idade...">
+                <input class="form-control" type="search" name="cargo" placeholder="buscar cargo...">
+                <input class="form-control" type="submit" value="Buscar">
+            </div> 
+            
         </form>
 
         <table class="table">

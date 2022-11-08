@@ -30,7 +30,7 @@
                 <input class="form-control" type="search" name="sobrenome" placeholder="buscar sobrenome...">
                 <input class="form-control" type="search" name="idade" placeholder="buscar idade...">
                 <input class="form-control" type="search" name="cargo" placeholder="buscar cargo...">
-                <input class="form-control" type="submit" value="Buscar">
+                <input class="btn btn-primary" type="submit" value="Buscar">
             </div> 
             
         </form>
